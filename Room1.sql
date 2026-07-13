@@ -1,0 +1,7 @@
+USE roomconnect;
+
+ALTER TABLE owners
+ADD COLUMN city VARCHAR(100) NOT NULL AFTER phone;
+
+ALTER TABLE owners
+ADD COLUMN address TEXT NOT NULL AFTER city;
